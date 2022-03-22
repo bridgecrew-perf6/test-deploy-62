@@ -44,11 +44,11 @@ app.get("//*", function (req, res) {
 // });
 
 // Plug routers
-app.use('/data', indexRouter);
-app.use('/data/users', usersRouter);
-app.use('/data/products', productsRouter);
-app.use('/data/customers',customerRouter);
-app.use('/data/quotations',quotationRouter);
+app.use('/home', indexRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
+app.use('/customers',customerRouter);
+app.use('/quotations',quotationRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
